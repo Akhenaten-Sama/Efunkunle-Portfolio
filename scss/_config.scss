@@ -1,4 +1,4 @@
-$primary-color: #444;
+$primary-color:#444;
 $secondary-color: teal;
 $show-home-image:true;
 $home-image: url(../img/img2.jfif);
@@ -52,6 +52,15 @@ $background-opacity: 0.9;
 @mixin mediaXl{
     @media screen and (min-width:1171px){
         @content;
+    }
+}
+
+
+@function set-text-color($color){
+    @if (lightness($color) > 40){
+      @return #000;  
+    }@else {
+        @return #fff;
     }
 }
 
