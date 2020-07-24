@@ -76,7 +76,7 @@ overflow: hidden;
     }
 
     &-branding{
-        background: rgba($primary-color, 0.9);
+        background: rgba($primary-color, 0.95);
         transform:translate3d(0, 100%,0);
         @include easeOut;
 
@@ -121,10 +121,14 @@ overflow: hidden;
       &:hover {
           color:$secondary-color;
       }
+      &.current{
+        color:$secondary-color;
+    }
 
   }
 
 }
+
 
 @for $x from 1 through 4 {
     .nav-item:nth-child(#{$x}){

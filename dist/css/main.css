@@ -47,7 +47,7 @@
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: rgba(68, 68, 68, 0.9);
+    background: rgba(68, 68, 68, 0.95);
     transform: translate3d(0, 100%, 0);
     transition: all 0.4s ease-out; }
     .menu-branding.show {
@@ -79,6 +79,8 @@
     text-decoration: none;
     transition: all 0.4s ease-out; }
     .menu .nav-link:hover {
+      color: teal; }
+    .menu .nav-link.current {
       color: teal; }
 
 .nav-item:nth-child(1) {
@@ -156,7 +158,7 @@ main {
 
 .about-info {
   display: grid;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3' 'skill1 skill2 skill3';
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
   padding-top: 15px; }
@@ -175,6 +177,14 @@ main {
     grid-area: job2; }
   .about-info .job-3 {
     grid-area: job3; }
+  .about-info .skill-1 {
+    grid-area: skill1; }
+  .about-info .skill-2 {
+    grid-area: skill2; }
+  .about-info .skill {
+    background: #515151;
+    padding: 0.5rem;
+    border-bottom: teal 5px solid; }
   .about-info .job {
     background: #515151;
     padding: 0.5rem;
