@@ -181,10 +181,6 @@ main {
     grid-area: skill1; }
   .about-info .skill-2 {
     grid-area: skill2; }
-  .about-info .skill {
-    background: #515151;
-    padding: 0.5rem;
-    border-bottom: teal 5px solid; }
   .about-info .job {
     background: #515151;
     padding: 0.5rem;
@@ -281,7 +277,7 @@ main {
       width: 100px;
       height: 100px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3' 'skill1' 'skill2' 'skill3';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
